@@ -377,7 +377,7 @@ hr {
   margin-top: 21px;
   margin-bottom: 21px;
   border: 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 2px solid #666;
 }
 
 .sr-only {
@@ -4701,6 +4701,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default {
   background-color: #222222;
   border-color: #121212;
+  top:-100px;
 }
 
 .navbar-default .navbar-brand {
