@@ -1,27 +1,31 @@
-<h1>Tashman Family Album</h1>
+<div class="span12">
+  <h2>Tashman Family Album</h2>
+  <h3>Current picture list</h3>
+</div> <!-- end span12 -->
 
-<h2>Please login or register to continue</h2>
+<div class="span10 offset1">
+  <h4>
+        <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Date added</th>
+      </tr>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Date added</th>
-  </tr>
+    <% @ideas.each do |idea| %>
+      <tr>
+        <td><%= idea.name %></td>
+        <td><%= idea.description %></td>
+            <td><%= idea.created_at.to_date %></td>
+        <td><%= link_to 'View', idea, :class => "btn btn-xs btn-info" %></td>
+        <td><%= link_to 'Edit', edit_idea_path(idea), :class => "btn btn-xs btn-info" %></td>
+        <td><%= link_to 'Delete', idea, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-xs btn-info" %></td>
+      </tr>
+      <% end %>
+      </table>
+  </h4>
+      
+      <br />
 
-<h3>Current pictures</h3>
-<% @ideas.each do |idea| %>
-  <tr>
-    <td><%= idea.name %></td>
-    <td><%= idea.description %></td>
-        <td><%= idea.created_at.to_date %></td>
-    <td><%= link_to 'View', idea %></td>
-    <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
-    <td><%= link_to 'Delete', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Picture', new_idea_path %>
+    <%= link_to 'New Picture', new_idea_path, :class => "btn btn-primary" %>
+</div> <!-- end span10 -->
