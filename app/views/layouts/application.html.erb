@@ -12,20 +12,18 @@
 	<div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="/">Album</a>
+      <a class="brand" href="/ideas/index">Album</a>
       <ul class="nav">
-        <li class="active"><a href="/ideas">Pictures</a></li>
+        <li> <%= link_to "Add Picture", "/ideas/new" %></li>
+        <li><a href="/ideas">List</a></li>
         <li><a href="#">Slideshow</a></li>
         <li><a href="#">Settings</a></li>
-          <li><%= link_to "Info", pages_info_path %></li>
-           <li><%= link_to 'Login', new_user_session_path %></li>
-              <li> <%= link_to 'Register', new_user_registration_path %></li>
-              <li> <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
-              <li> <%= link_to 'Edit Account', edit_user_registration_path %></li>
-
-             
-
-      </ul>
+        <li><%= link_to "Info", pages_info_path %></li>
+        <li><%= link_to 'Login', new_user_session_path %></li>
+        <li> <%= link_to 'Register', new_user_registration_path %></li>
+        <li> <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
+        <li> <%= link_to 'Edit Account', edit_user_registration_path %></li>
+     </ul>
     </div>
   </div>
 </div>
