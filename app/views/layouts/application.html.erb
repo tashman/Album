@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Family Album</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application", :media => "all" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -26,7 +26,7 @@
     <ul class="nav navbar-nav">
          <li> <%= link_to "Add Picture", "/ideas/new" %></li>
         <li><a href="/ideas">List</a></li>
-        <li><a href="#">Slideshow</a></li>
+        <li><a href="/ideas/slideshow">Slideshow</a></li>
         <li><%= link_to "Info", pages_info_path %></li>
         <li><%= link_to 'Login', new_user_session_path %></li>
         <li> <%= link_to 'Register', new_user_registration_path %></li>
@@ -46,7 +46,7 @@
 
 <footer>
   <div class="container">
-    <a href="http://www.about.me/dantashman">Dan Tashman</a> ©2013
+    <a href="http://www.about.me/dantashman" target="_blank">Dan Tashman</a> ©2013
   </div>
 </footer>
 
