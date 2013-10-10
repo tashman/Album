@@ -1,4 +1,6 @@
 Girlsapp::Application.routes.draw do
+  get "pages/slideshow"
+
   devise_for :users
 
   get "pages/info"
