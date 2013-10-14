@@ -776,6 +776,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
 }
 
 .container:before,
@@ -1507,7 +1508,7 @@ th {
 
 .table thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solid #000;
 }
 
 .table caption + thead tr:first-child th,
