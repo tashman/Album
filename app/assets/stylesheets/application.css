@@ -25,6 +25,11 @@ text-align: left;
 }
 td .btn { margin-left: -8px;}
 h5 { margin-bottom: -20px; }
+
+.picture_border { 
+	border: solid 10px #666;
+}
+
 .footer { 
 	display: block; 
 	width: 100%; 
