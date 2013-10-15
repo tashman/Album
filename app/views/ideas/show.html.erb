@@ -5,7 +5,7 @@
 
 	 <h2> <%= @idea.name %>: </h2>
 	 <h3> <%= @idea.description %></h3>
-	 <h3> Select custom border color</h3>
+	 <h3> Select custom border color</h3>  
 	
 
 <%= image_tag(@idea.picture_url, :width => 600, :class => "picture_border") if @idea.picture.present? %>
