@@ -14,10 +14,8 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
-
+//= require bootstrap-colorpicker
 //= require bootstrap
-
-//= require bootstrap/colorpicker
 //= require bootstrap/datepicker
 
 //= require bootstrap/load-image.min

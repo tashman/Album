@@ -6,8 +6,17 @@
 
 	 <h2> <%= @idea.name %>: </h2>
 	 <h3> <%= @idea.description %></h3>
+	 <h3> Select custom border color</h3>
+	 <script>
+$('.colorpicker')..colorpicker('setValue', value).on('changeColor', function(ev){
+  bodyStyle.borderColor = ev.color.toHex();
+});
+	 </script>
+  <div class="btn btn-custom" data-color-format="hex" data-color="rgb(255, 255, 255)">Change border color</a>
+          </div>
+          <br />
+           <br />
 
-	  	<br />
 	 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 	<br />
 	<br />
