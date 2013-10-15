@@ -6,4 +6,4 @@ en:
   helpers:
     submit:
       create: "Create album picture"
-      update: "Update picture"
+      update: "Update album picture"
