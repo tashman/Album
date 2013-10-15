@@ -7,6 +7,9 @@
 	 <h2> <%= @idea.name %>: </h2>
 	 <h3> <%= @idea.description %></h3>
 
+	  	<br />
+	 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
+
 	<br />
 
 	<%= link_to 'Edit', edit_idea_path(@idea) %> |
